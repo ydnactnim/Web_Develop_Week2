@@ -1,67 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
   <head>
     <title>Example</title>
     <link href="../assets/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header class="site-header">
-      <p class="site-title">Turtle Ipsum</p>
-      <p class="site-subtitle">The World's Premier Turtle Fan Club</p>
+      <p class="site-title" aria-label="Website title">Turtle Ipsum</p>
+      <p class="site-subtitle" aria-label="Website subtitle">
+        The World's Premier Turtle Fan Club
+      </p>
     </header>
     <main>
-      <div class="main-nav">
-        <p class="nav-header">Resources</p>
-        <div class="nav-list">
-          <img src="turtle.jpg" alt="" />
-          <p class="nav-item nav-item-bull">
-            <a href="https://www.youtube.com/watch?v=CMNry4PE93Y"
+      <nav class="main-nav" aria-label="Main navigation">
+        <header class="nav-header" aria-label="Resource navigation">
+          Resources
+        </header>
+        <ul class="nav-list">
+          <li class="nav-item nav-item-bull">
+            <img src="turtle.jpg" alt="" />
+            <a
+              href="https://www.youtube.com/watch?v=CMNry4PE93Y"
+              aria-label="Link to YouTube video 'I like turtles'"
               >"I like turtles"</a
             >
-          </p>
-          <img src="basic_turtle.png" alt="" />
-          <p class="nav-item nav-item-bull">
-            <a href="https://en.wikipedia.org/wiki/Turtle">Basic Turtle Info</a>
-          </p>
-          <img src="chocolate_turtle.jpg" alt="" />
-          <p class="nav-item nav-item-bull">
-            <a href="https://en.wikipedia.org/wiki/Turtles_(chocolate)"
+          </li>
+          <li class="nav-item nav-item-bull">
+            <img src="basic_turtle.png" alt="" />
+            <a
+              href="https://en.wikipedia.org/wiki/Turtle"
+              aria-label="Link to Wikipedia page about turtles"
+              >Basic Turtle Info</a
+            >
+          </li>
+          <li class="nav-item nav-item-bull">
+            <img src="chocolate_turtle.jpg" alt="" />
+            <a
+              href="https://en.wikipedia.org/wiki/Turtles_(chocolate)"
+              aria-label="Link to Wikipedia page about chocolate turtles"
               >Chocolate Turtles</a
             >
-          </p>
-        </div>
-      </div>
-      <div class="main-content">
-        <div>
-          <p class="page-title">
-            Welcome to Turtle Ipsum. <a href="">Click here</a> to learn more.
-          </p>
-          <p class="article-text">
-            Turtle ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum
-          </p>
-        </div>
-      </div>
+          </li>
+        </ul>
+      </nav>
+      <section class="main-content" aria-label="Main content">
+        <p class="page-title">
+          Welcome to Turtle Ipsum.
+          <a href="" aria-label="Click to learn more">Click here</a> to learn
+          more.
+        </p>
+        <p class="article-text">
+          Turtle ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </section>
     </main>
-    <footer class="footer">
-      <div class="footer-section">
-        <span class="button">Sign up for turtle news</span>
-      </div>
-      <div class="footer-section">
-        <p class="nav-header footer-title">Internal Pages</p>
-        <div class="nav-list">
-          <p class="nav-item nav-item-bull"><a href="../">Index</a></p>
-          <p class="nav-item nav-item-bull">
-            <a href="../semantic">Semantic Example</a>
-          </p>
-        </div>
-      </div>
-      <p class="footer-copyright">&copy; 2016 Instrument</p>
+    <footer class="footer" aria-label="Footer">
+      <section class="footer-section">
+        <button class="button" aria-label="Sign up for turtle news">
+          Sign up for turtle news
+        </button>
+      </section>
+      <section class="footer-section">
+        <p
+          class="nav-header footer-title"
+          aria-label="Internal pages navigation"
+        >
+          Internal Pages
+        </p>
+        <ul class="nav-list">
+          <li class="nav-item nav-item-bull">
+            <a href="../" aria-label="Go to index page">Index</a>
+          </li>
+          <li class="nav-item nav-item-bull">
+            <a href="../semantic" aria-label="Go to semantic example page"
+              >Semantic Example</a
+            >
+          </li>
+        </ul>
+      </section>
+      <p class="footer-copyright" aria-label="Copyright information">
+        &copy; 2016 Instrument
+      </p>
     </footer>
   </body>
 </html>
